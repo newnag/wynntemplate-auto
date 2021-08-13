@@ -6,11 +6,14 @@ let swiperhome = new Swiper('.home-slide',{
 });
 
 let swiper_choose = new Swiper('.slide-chooseus',{
-  freeMode: true,
   spaceBetween: 10,
   breakpoints: {
     480:{
       slidesPerView: 1,
+      slidesPerColumn: 1,
+    },
+    1366:{
+      slidesPerView: 2,
       slidesPerColumn: 1,
     },
   },

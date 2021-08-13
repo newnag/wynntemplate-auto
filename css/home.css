@@ -110,6 +110,18 @@
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .homepage .section1 {
+    padding: 0 10em;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .homepage .section1 {
+    padding: 0 20em;
+  }
+}
+
 .homepage .section1 .left {
   display: none;
 }
@@ -142,11 +154,28 @@
   padding: 1em 0;
 }
 
+.homepage .section1 .right .slide-chooseus {
+  width: 100%;
+  height: 100%;
+}
+
 .homepage .section1 .right .slide-chooseus .swiper-wrapper .swiper-slide {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 75%;
       grid-template-columns: 25% 75%;
+}
+
+@media screen and (min-width: 1366px) {
+  .homepage .section1 .right .slide-chooseus .swiper-wrapper .swiper-slide {
+    -ms-grid-columns: 24% 71%;
+        grid-template-columns: 24% 71%;
+    -webkit-column-gap: 5%;
+            column-gap: 5%;
+    background: #fff;
+    padding: 1em;
+    width: 380px !important;
+  }
 }
 
 .homepage .section1 .right .slide-chooseus .swiper-wrapper .swiper-slide .detail-zone .detail {
@@ -181,6 +210,18 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .homepage .section2 {
+    padding: 2em 10em;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .homepage .section2 {
+    padding: 2em 20em;
   }
 }
 
@@ -272,6 +313,18 @@
   padding: 0 .5em;
 }
 
+@media screen and (min-width: 1366px) {
+  .homepage .blog {
+    padding: 0 10em;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .homepage .blog {
+    padding: 0 20em;
+  }
+}
+
 .homepage .blog .title-blog {
   text-align: center;
 }
@@ -349,6 +402,22 @@
   grid-row-gap: 1em;
 }
 
+@media screen and (min-width: 1366px) {
+  .homepage .contact {
+    padding: 2em 10em;
+    -ms-grid-columns: .6fr .4fr;
+        grid-template-columns: .6fr .4fr;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .homepage .contact {
+    padding: 2em 20em;
+  }
+}
+
 .homepage .contact .form-contact {
   background: #fff;
   border-radius: 5px;
@@ -381,6 +450,12 @@
   border-radius: 5px;
 }
 
+@media screen and (min-width: 1366px) {
+  .homepage .contact .map iframe {
+    height: 100% !important;
+  }
+}
+
 .homepage .contact .bg {
   position: absolute;
   top: 0;
@@ -388,5 +463,9 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.homepage .contact .bg img {
+  width: 100%;
 }
 /*# sourceMappingURL=home.css.map */

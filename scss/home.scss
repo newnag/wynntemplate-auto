@@ -83,6 +83,12 @@
       display: grid;
       grid-template-columns: 45% 55%;
     }
+    @media screen and (min-width:$xl){
+      padding: 0 10em;
+    }
+    @media screen and (min-width:$wide){
+      padding: 0 20em;
+    }
 
     .left{
       display: none;
@@ -109,10 +115,20 @@
       }
 
       .slide-chooseus{
+        width: 100%;
+        height: 100%;
         .swiper-wrapper{
           .swiper-slide{
             display: grid;
             grid-template-columns: 25% 75%;
+
+            @media screen and (min-width:$xl){
+              grid-template-columns: 24% 71%;
+              column-gap: 5%;
+              background: $white;
+              padding: 1em;
+              width: 380px!important;
+            }
 
             .detail-zone{
               .detail{
@@ -149,6 +165,12 @@
       display: grid;
       grid-template-columns: repeat(2,1fr);
       grid-column-gap: 1em;
+    }
+    @media screen and (min-width:$xl){
+      padding: 2em 10em;
+    }
+    @media screen and (min-width:$wide){
+      padding: 2em 20em;
     }
 
     .left{
@@ -236,6 +258,13 @@
     margin: 2em 0;
     padding: 0 .5em;
 
+    @media screen and (min-width:$xl){
+      padding: 0 10em;
+    }
+    @media screen and (min-width:$wide){
+      padding: 0 20em;
+    }
+
     .title-blog{
       text-align: center;
     }
@@ -304,6 +333,15 @@
     grid-template-columns: 100%;
     grid-row-gap: 1em;
 
+    @media screen and (min-width:$xl){
+      padding: 2em 10em;
+      grid-template-columns: .6fr .4fr;
+      column-gap: 1em;
+    }
+    @media screen and (min-width:$wide){
+      padding: 2em 20em;
+    }
+
     .form-contact{
       background: $white;
       border-radius: 5px;
@@ -337,6 +375,10 @@
         width: 100%!important;
         height: 250px!important;
         border-radius: 5px;
+
+        @media screen and (min-width:$xl){
+          height: 100%!important;
+        }
       }
     }
 
@@ -347,6 +389,10 @@
       width: 100%;
       height: 100%;
       z-index: -1;
+
+      img{
+        width: 100%;
+      }
     }
   }
 }
