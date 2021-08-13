@@ -26,7 +26,7 @@
       <nav>
         <ul class="listmenu">
           <li class="menu"><a href="">home</a></li>
-          <li class="menu"><a href="">about us</a></li>
+          <li class="menu active"><a href="">about us</a></li>
           <li class="menu"><a href="">our service</a></li>
           <li class="menu"><a href="">blog</a></li>
           <li class="menu"><a href="">contact us</a></li>
@@ -64,9 +64,9 @@
         <h2>Certificate</h2>
 
         <div class="img-cer">
-          <figure><img src="/img/certi1.jpg" alt=""></figure>
-          <figure><img src="/img/certi2.jpg" alt=""></figure>
-          <figure><img src="/img/certi3.jpg" alt=""></figure>
+          <figure><img onclick="big_img(this.src)" src="/img/certi1.jpg" alt=""></figure>
+          <figure><img onclick="big_img(this.src)" src="/img/certi2.jpg" alt=""></figure>
+          <figure><img onclick="big_img(this.src)" src="/img/certi3.jpg" alt=""></figure>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
     <div class="big-img">
       <img src="/img/certi1.jpg" alt="">
 
-      <div class="close"><i class="fas fa-times"></i></div>
+      <div class="close"><i class="fas fa-times" onclick="close_bigImg()"></i></div>
     </div>
   </main>
 

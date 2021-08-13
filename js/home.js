@@ -22,8 +22,3 @@ let swiper_choose = new Swiper('.slide-chooseus',{
     disableOnInteraction: false,
   },
 });
-
-// เปิดช่องค้นหา
-function open_search(that){
-  that.closest('.search').querySelector('.input-search').classList.toggle('show')
-}

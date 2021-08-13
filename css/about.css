@@ -4,12 +4,20 @@
   padding: 2em 0;
 }
 
+@media screen and (min-width: 1366px) {
+  .about-page {
+    width: 100%;
+    padding: 2em 10em;
+  }
+}
+
 .about-page .about-us {
   margin-bottom: 4em;
 }
 
 .about-page .about-us h2 {
   margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .about-page .about-us .ck {
@@ -23,6 +31,7 @@
 
 .about-page .cer h2 {
   margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .about-page .cer .img-cer {
@@ -44,5 +53,6 @@
 
 .about-page .cer .img-cer figure img {
   width: 100%;
+  cursor: pointer;
 }
 /*# sourceMappingURL=about.css.map */

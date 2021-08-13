@@ -81,9 +81,13 @@ input,button,select,textarea{
   height: 100%;
   z-index: 10;
   background: #000000e0;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+
+  &.show{
+    display: flex;
+  }
 
   img{
     max-width: 90%;
@@ -200,6 +204,12 @@ header{
           }
           @media screen and (min-width:$lg){
             margin-right: 3em;
+          }
+
+          &.active{
+            a{
+              color: $blue;
+            }
           }
 
           a{
@@ -330,7 +340,7 @@ main{
 
   @media screen and (min-width:$md){
     margin-top: 100px;
-    min-height: 850px;
+    min-height: 100vh;
   }
 }
 
